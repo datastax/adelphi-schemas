@@ -1,0 +1,129 @@
+//Schema metadata:
+//@created_at = 2020-12-09T11:38:20.385543
+//@github_user = absurdfarce
+//@hashed_ks_name = Gxzi/7dqCSZ45WIwtTpUXJNmvy7fStIhNpzZMrYLyMU=
+//@dc-count = 1
+//@host-count = 1
+
+CREATE KEYSPACE ks_1 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  AND durable_writes = true;
+
+CREATE TYPE ks_1.udt_0 (
+    fld_0 double,
+    fld_1 double,
+    fld_2 double
+);
+
+CREATE TABLE ks_1.tbl_1 (
+    pk_1 text,
+    pk_2 timeuuid,
+    ck_0 timestamp,
+    col_1 double,
+    col_2 text,
+    PRIMARY KEY ((pk_1, pk_2), ck_0)
+) WITH CLUSTERING ORDER BY (ck_0 DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
+
+CREATE TABLE ks_1.tbl_2 (
+    pk_1 text,
+    pk_2 timeuuid,
+    ck_0 timestamp,
+    col_3 double,
+    col_4 text,
+    PRIMARY KEY ((pk_1, pk_2), ck_0)
+) WITH CLUSTERING ORDER BY (ck_0 DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
+
+CREATE TABLE ks_1.tbl_3 (
+    pk_1 text,
+    ck_1 timeuuid,
+    col_5 boolean,
+    col_6 timestamp,
+    col_7 timestamp,
+    col_8 text,
+    PRIMARY KEY (pk_1, ck_1)
+) WITH CLUSTERING ORDER BY (ck_1 DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
+
+CREATE TABLE ks_1.tbl_4 (
+    pk_1 text,
+    pk_2 timeuuid,
+    ck_0 timestamp,
+    col_9 text,
+    PRIMARY KEY ((pk_1, pk_2), ck_0)
+) WITH CLUSTERING ORDER BY (ck_0 DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
+
+CREATE TABLE ks_1.tbl_5 (
+    pk_1 text,
+    pk_2 timeuuid,
+    ck_0 timestamp,
+    col_10 double,
+    col_11 text,
+    PRIMARY KEY ((pk_1, pk_2), ck_0)
+) WITH CLUSTERING ORDER BY (ck_0 DESC)
+    AND additional_write_policy = '99p'
+    AND bloom_filter_fp_chance = 0.01
+    AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+    AND comment = ''
+    AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+    AND compression = {'chunk_length_in_kb': '16', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+    AND crc_check_chance = 1.0
+    AND default_time_to_live = 0
+    AND gc_grace_seconds = 864000
+    AND max_index_interval = 2048
+    AND memtable_flush_period_in_ms = 0
+    AND min_index_interval = 128
+    AND read_repair = 'BLOCKING'
+    AND speculative_retry = '99p';
