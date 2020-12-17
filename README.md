@@ -6,7 +6,7 @@ This repository contains schemas exported and contributed using the Adelphi test
 
 ## Adelphi
 
-Adelphi is an open source tool for applying performance and fuzz testing across multiple versions of Cassandra&trade;, using real-world data schemas.  For more info on the greater Adelphi project, learn how to use it, or learn how to get involved and contribute check out the primary project repository [here](https://github.com/datastax/adelphi).
+Adelphi is an open source tool for applying performance and fuzz testing across multiple versions of Apache Cassandra&trade;, using real-world data schemas.  For more info on the greater Adelphi project, learn how to use it, or learn how to get involved and contribute check out the primary project repository [here](https://github.com/datastax/adelphi).
 
 ## Contribution
 
