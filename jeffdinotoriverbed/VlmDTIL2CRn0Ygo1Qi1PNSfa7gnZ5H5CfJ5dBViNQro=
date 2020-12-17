@@ -1,0 +1,9 @@
+//Schema metadata:
+//@maturity = dev
+//@host-count = 1
+//@dc-count = 1
+//@creation_timestamp = 2020-12-17T19:53:53.921755+00:00
+//@github_user = jeffdinotoriverbed
+//@keyspace_id = VlmDTIL2CRn0Ygo1Qi1PNSfa7gnZ5H5CfJ5dBViNQro=
+
+CREATE KEYSPACE IF NOT EXISTS ks_9 WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  AND durable_writes = true;
